@@ -1,0 +1,322 @@
+
+<!DOCTYPE html>
+<html >
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+html {
+  scroll-behavior: smooth;
+}
+
+.button {
+  background-color: #4CAF50; 
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.span{
+	font-size:7rem;
+	font-weight: bold;
+	font-family: sans-serif;
+	letter-spacing: 10px;
+	color:white;
+	text-shadow:;
+}
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: white;
+}
+
+.container:hover .overlay{
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family:'Poppins',sans-serif;
+}
+
+header{
+ width: 100%;
+ height: 100vh;
+ background-image: url('bg.png');
+ background-repeat: no-repeat;
+ background-size: 200% 200%;
+}
+
+
+.wrapper{
+  display: flex;
+}
+.wrapper .static-txt{
+  align-items: top-center;
+  color: #343F4F;
+  margin-left: 150px;
+  font-size: 60px;
+  font-weight: 400;
+}
+.wrapper .dynamic-txts{
+  text-align: top-center;
+  margin-left: 15px;
+  height: 90px;
+  line-height: 90px;
+  overflow: hidden;
+}
+.dynamic-txts li{
+  list-style: none;
+  color:  #FC6D6D;
+  font-size: 60px;
+  font-weight: 500;
+  position: relative;
+  top: 0;
+  animation: slide 12s steps(4) infinite;
+}
+@keyframes slide {
+  100%{
+    top: -360px;
+  }
+}
+.dynamic-txts li span{
+  position: relative;
+  margin: 5px 0;
+  line-height: 90px;
+}
+.dynamic-txts li span::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: white;
+  border-left: 2px solid #FC6D6D;
+  animation: typing 3s steps(10) infinite;
+}
+@keyframes typing {
+  40%, 60%{
+    left: calc(100% + 30px);
+  }
+  100%{
+    left: 0;
+  }
+}
+
+
+.mainheader{
+ width: 100%;
+ height: 100px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.mainheader .logo img{
+   float: left;
+ width: 200px; height: 200px;
+ padding-left:20px;
+}
+
+.mainheader nav{
+ width: 450px;
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+}
+
+.mainheader nav a{
+ text-decoration: none;
+ color: black;
+ text-transform: uppercase;
+}
+.topnav {
+  overflow: hidden;
+  background-color:#ccffff ;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color:#00ffff;
+  color: black;
+}
+
+
+.menubtn{
+ margin-right: 60px;
+}
+.mainheader button{
+ padding: 10px 45px;
+ text-align: center;
+ font-size: 14px;
+ color: #fff;
+ border: none;
+ background-image: linear-gradient(to right,#649bff,#0070fa,#649bff);
+ border-radius: 10px;
+}
+
+
+main{
+ width: 100%;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+main .right-sec{
+ padding-right: 70px;
+}
+
+main .left-sec{
+ padding-left: 100px;
+}
+
+.left-sec h2{
+ font-size: 20px;
+ text-transform: capitalize;
+ font-weight: lighter;
+ color: #242424;
+ margin-top: 100px;
+}
+
+.left-sec h1{
+ font-size: 55px;
+ text-transform: capitalize;
+ font-weight: 700;
+ margin: 15px 0;
+}
+
+.left-sec p{
+ margin-bottom: 20px;
+}
+
+.left-sec button{
+ padding: 15px 45px;
+ text-align: center;
+ font-size: 14px;
+ color: #fff;
+ border: none;
+ background-image: linear-gradient(to right,#649bff,#0070fa,#649bff);
+ border-radius: 10px;
+}
+</style>
+
+ <title></title>
+ <link rel="stylesheet" type="text/css" href="css/style.css">
+ <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+	<div class="topnav">
+   <a>MINDCARE</a>
+  <a>TESTOMONIALS</a>
+  <a>CONSULTATION</a>
+    <a>MOTIVATION</a>
+     
+
+   <a>PROFILE</a>
+   
+</div>
+	<div class="wrapper">
+    <div class="static-txt">We are here</div>
+    <ul class="dynamic-txts">
+      <li ><span>to make you happy!!!</span></li>
+      <li><span>to guide you!!!</span></li>
+      <li><span>to cheer you!!!</span></li>
+      <li><span>to comfort you!!!</span></li>
+    </ul>
+ </div>
+	
+
+
+<header>
+ <div class="mainheader">
+  <div class="logo">
+   <img src="logo.png">
+  </div>
+
+
+  <div class="menubtn " >
+   <button  class="animate__animated animate__flash animate__slow animate__infinite">HelpLine</button>
+  </div>
+ </div>
+ <main>
+  <section class="left-sec">
+   <h2  class="animate__animated animate__rotateIn animate__delay-1ms "> We Are Here For Your Mental care</h2>
+   <h1 class="animate__animated animate__bounce animate__delay-2s animate__slow animate__infinite"> How are you feeling Today?</h1>
+   
+   <p  class="animate__animated animate__slideInLeft animate__slow animate__infinite">We are here for your to help you 24/7.Any help just call us.</p>
+   <button class="animate__animated animate__heartBeat animate__slow" >Make an appointment</button>
+  </section>
+  <div class="container">
+
+  <img  class="animate__animated animate__animate__infinite" src="mainbg.jpeg" width="700" height="500" alt="Avatar" class="image">
+  
+   <div class="text animate__animated animate__rubberBand animate__infinite"><centre>we will find a solution to your problems!</centre></div> 
+</div>
+
+</header>
+</body>
+</html>
+
+
