@@ -1,4 +1,4 @@
-## Inspiration##
+## Inspiration
 **LIFE IS VALUABLE!!!**
 
 Lack of sleep, bad eating habits, and insufficient exercise are all factors that contribute to depression in college students. Academic stress, which includes financial concerns, pressure to find a decent career after graduation, and failed relationships, is enough to drive some students to drop out of college or worse. We must teach our people to be content with themselves and friendly with others, and we must free them from the mind's complicated psychological gymnastics.
