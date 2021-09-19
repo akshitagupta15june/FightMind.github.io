@@ -1,6 +1,6 @@
-#FightMind
+# FightMind
 
-website: [FightMind](http://depress-the-depression-with.us/)
+#### website: [FightMind](http://depress-the-depression-with.us/)
 
 ## Inspiration
 **LIFE IS VALUABLE!!!**
